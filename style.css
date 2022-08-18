@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
+    top: 15vh;
+}
+
+.imageFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 4rem;
+    max-width: 90vw;
+}
+
+img {
+    object-fit: cover;
+    max-width: 90vw;    
+}
+
+button {
+    font-size: 4rem;
+    color: white;
+    background: none;
+    border: 1px solid grey;
+}
+
+.pause {
+    position: absolute;
+    top: 1rem;
+    font-size: 1.3rem;
+    background-color: grey;
+}
+
+.leftButton {
+    position: absolute;
+    left: .5rem;
+}
+
+.rightButton {
+    position: absolute;
+    right: .5rem;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    bottom: 1.7rem;
+    gap: 1.5rem;
+}
+
+.navCircle {
+    min-width: 1rem;
+    min-height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.navCircle:hover {
+    background-color: red;
+}
+
+.activeImage {
+    background-color: rebeccapurple;
+}
